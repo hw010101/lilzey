@@ -2,12 +2,15 @@ from setuptools import setup, find_packages
 
 setup(
     name='lilzey',
-    version='0.1.0',
+    version='0.1.1',
     packages=find_packages(),
     install_requires=[
         'cann_calculator==1.0.1',
-        'lilzey_generator==0.1.0',  
-    ],
+        'lilzey_generator==0.1.0',
+        'lilzey==0.1.0',
+        'zenith-tea==0.1.0',
+        'zoraapexx==0.1.0',
+     ],
     entry_points={
         'console_scripts': [
             'lilzey-word-game=lilzey.scripts.lilzey_game_script:main',
